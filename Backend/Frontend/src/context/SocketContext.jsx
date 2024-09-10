@@ -18,7 +18,7 @@ export const SocketProvider=({children})=>{
 
     useEffect(()=>{
         if(authUser?.user?._id){
-            const socket=io("http://localhost:4000",{
+            const socket=io("https://letschat-uusa.onrender.com",{
             query:{
                 userId:authUser.user._id,
             },
